@@ -501,7 +501,7 @@ public class AutoSenseAntDroid {
              {
                  try
                  {
-                     Log.i(TAG, "antDecodeAutoSense: Requesting device number");
+                     //Log.i(TAG, "antDecodeAutoSense: Requesting device number");
 
                      sAntReceiver.ANTRequestMessage(AutoSense_CHANNEL, AntMesg.MESG_CHANNEL_ID_ID);
                  }
@@ -546,7 +546,6 @@ public class AutoSenseAntDroid {
 	        	    //{
 	        	    //	Log.e(TAG, "antDecodeAutoSense: Caught exception " + e);
 	        	    //}
-            	 	//Log.d(TAG, "ECG: " + samples[0]);
          	    	msm.updateSensor(samples, 1, ChannelToSensorMapping.ECG, timestamp);
             	 break;
              case ACCELX_CHANNEL:
@@ -558,25 +557,23 @@ public class AutoSenseAntDroid {
             	    //{
             	    //	Log.e(TAG, "antDecodeAutoSense: Caught exception " + e);
             	    //}
-         	 		//Log.d(TAG, "ACCELX: " + samples[0]);
             	    msm.updateSensor(samples, 1, ChannelToSensorMapping.ACCELX, timestamp);
             	 break;
              case ACCELY_CHANNEL:
 	         	    //try {
 	        	    	//textACCELY.setText("AccY: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
-	         	    	Log.d(TAG, "AccY: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
+	         	    	//Log.d(TAG, "AccY: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
 	        	    //}
 	        	    //catch(Exception e)
 	        	    //{
 	        	    //	Log.e(TAG, "antDecodeAutoSense: Caught exception " + e);
 	        	    //}
-         	 		//Log.d(TAG, "ACCELY: " + samples[0]);
 	         	    	msm.updateSensor(samples, 1, ChannelToSensorMapping.ACCELY, timestamp);
             	 break;
              case ACCELZ_CHANNEL:
 	         	    //try {
 	        	    	//textACCELZ.setText("AccZ: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
-	         	    	Log.d(TAG, "AccZ: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
+	         	    	//Log.d(TAG, "AccZ: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
 	        	    //}
 	        	    //catch(Exception e)
 	        	    //{
@@ -588,7 +585,7 @@ public class AutoSenseAntDroid {
              case GSR_CHANNEL:
 	         	    //try {
 	        	    	//textGSR.setText("GSR: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
-	         	    	Log.d(TAG, "GSR: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
+	         	    	//Log.d(TAG, "GSR: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
 	        	    //}
 	        	    //catch(Exception e)
 	        	    //{
@@ -600,7 +597,7 @@ public class AutoSenseAntDroid {
              case RIP_CHANNEL:
 	         	    //try {
 	        	    	//textRIP.setText("RIP: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
-	         	    	Log.d(TAG, "RIP: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
+	         	    	//Log.d(TAG, "RIP: " + samples[0] + " " + samples[1] + " " + samples[2] + " " + samples[3] + " " + samples[4]);
 	        	    //}
 	        	    //catch(Exception e)
 	        	    //{
@@ -614,9 +611,9 @@ public class AutoSenseAntDroid {
 	        	    	//textBATTERY.setText("Battery: " + (float)samples[0]/4096*3*2 + "V");
 	        	    	//textSKIN.setText("Skin Temperature: " + samples[1]);
 	        	    	//textAMBIENT.setText("Ambient Temperature: " + samples[2]);
-	        	    	Log.d(TAG, "Battery: " + (float)samples[0]/4096*3*2 + "V");
-	        	    	Log.d(TAG, "Skin Temperature: " + samples[1]);
-	        	    	Log.d(TAG, "Ambient Temperature: " + samples[2]);
+	        	    	//Log.d(TAG, "Battery: " + (float)samples[0]/4096*3*2 + "V");
+	        	    	//Log.d(TAG, "Skin Temperature: " + samples[1]);
+	        	    	//Log.d(TAG, "Ambient Temperature: " + samples[2]);
 	        	    //}
 	        	    //catch(Exception e)
 	        	    //{

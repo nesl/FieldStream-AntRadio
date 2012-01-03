@@ -31,9 +31,7 @@ import java.util.ArrayList;
 
 import org.fieldstream.service.logger.Log;
 
-
 public class BdurationCalculation {
-
 
 	public static boolean isPeak=false;							
 	/**

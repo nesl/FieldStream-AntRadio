@@ -602,7 +602,7 @@ public class InterviewScheduler extends Service {
 				e.printStackTrace();
 			}
 			
-			scheduleFirstInterview();
+			//scheduleFirstInterview();
 
 		}
 
